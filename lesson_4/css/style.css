@@ -1,0 +1,43 @@
+@import url(reset.css);
+
+
+.top {
+	color: green;
+}
+
+span{
+	color: yellow;
+}
+
+.china .tean{
+	color: red;
+}
+
+.jap-crock li{
+	color: blue;
+}
+
+#japanese{
+	color: cyan;
+}
+
+.jap-crock-5,
+.jap-crock-6{
+	color: orchid;
+}
+
+span.teas{
+	color: fuchsia;
+}
+
+.japan > p {
+	color: lawngreen;
+}
+
+[class*="chin-crock"]{
+	color: brown;
+}
+
+[id*="chinese"]{
+	color: yellowgreen;
+}
