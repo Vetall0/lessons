@@ -1,0 +1,132 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase:regular,500,600,700&display=swap");
+
+
+body{
+	font-family: "Inter", sans-serif;
+}
+
+header{
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	font-style: oblique;
+	word-spacing: 50px;
+	text-shadow: 5px 5px 5px #000000c2;
+}
+
+.head{
+	font-size: 36px;
+	letter-spacing: 10px;
+	word-spacing: normal;
+	text-transform: capitalize;
+	text-shadow: 7px -7px 5px #ff62628f;
+}
+
+.through{
+	text-decoration: line-through;
+}
+
+h1{
+	font-size: 32px;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.mush{
+	text-indent: 50px;
+}
+
+.part-1{
+	line-height: 1.5;
+}
+
+.sign{
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+}
+
+.eat{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.sourse{
+	font-size: 28px;
+	font-style: italic;
+	font-weight: 700;
+	color: blue;
+	text-decoration: underline;
+}
+
+footer{
+	font-size: 12px;
+	font-style: oblique;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+/* Стилі для дизайнерського макету Consulting */
+
+h4{
+	color: #37393F;
+	font-size: 30px;
+	font-family: Poppins;
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 1.27;
+}
+
+h5{
+	color: #37393F;
+	font-size: 40px;
+	font-family: Poppins;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 1.27;
+}
+
+.text{
+	color: #7D7D7D;
+	font-size: 18px;
+	line-height: 1.46;
+}
+
+.sub-text{
+	color: #6B77E5;
+	font-size: 20px;
+	font-family: Poppins;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.chapter-2 > p{
+	color: #7D7D7D;
+	font-size: 18px;
+	line-height: 1.46;
+}
+
+.chapter-2 > ul > li,
+.chapter-2 > ol > li{
+	color: #7D7D7D;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 2.54;
+	text-indent: 30px;
+}
