@@ -2,9 +2,9 @@
 @import url(fonts.css);
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,800&display=swap");
-
+/* 
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase:regular,500,600,700&display=swap");
-
+ */
 
 body{
 	font-family: "Inter", sans-serif;
