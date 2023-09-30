@@ -1,0 +1,224 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body{
+	font-family: "inter", sans-serif;
+}
+
+header{
+	max-width: 1189px;
+	margin: 0 auto;
+}
+
+header p{
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+header li{
+	font-size: 24px;
+	color: blue;
+	font-style: oblique;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
+
+.part{
+	padding: 50px 0;
+	font-size: 30px;
+	font-style: oblique;
+	margin-bottom: 10px;
+	color: blue;
+	text-decoration: underline;
+	
+}
+
+.block-1 a,
+.block-2 a,
+.block-3 a{
+	font-size: 18px;
+	font-style: oblique;
+	color: rgb(179, 0, 0);
+	text-decoration: underline;
+	margin-bottom: 30px;
+}
+
+/* Стилі для частини першої (Consulting) */
+
+.block-1{
+	padding: 10px;
+	max-width: 712px;
+	font-weight: 400;
+	font-size: 18px;
+	color: #7D7D7D;
+	margin: 0 auto;
+}
+
+.block-1 img,
+.benefits img{
+	max-width: 100%;
+}
+
+.block-1 img{
+	margin-bottom: 37px;
+}
+
+.benefits img{
+	max-width: 331px;
+	margin-right: 29px;
+}
+
+.management h2{
+	color: #37393F;
+	font-size: 30px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 1.27;
+	margin-bottom: 10px;
+}
+
+.management p,
+.media p{
+	line-height: 1.46;
+}
+
+.management{
+	margin-bottom: 42px;
+}
+
+.media{
+	margin-bottom: 40px;
+}
+
+.media h2{
+	color: #6B77E5;
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+
+.benefits{
+	font-size: 0;
+	margin-bottom: 50px;
+}
+
+.inline-block{
+	display: inline-block;
+	max-width: 332px;
+}
+
+.inline-block h2{
+	color: #37393F;
+	font-size: 25px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 15px;
+}
+
+.inline-block h3{
+	color: #40DDB6;
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 23px;
+}
+
+.inline-block li{
+	font-size: 18px;
+	line-height: 1.27;
+	margin-bottom: 35px;
+	padding-left: 20px;
+}
+
+/* Стилі для частини другої (Jewellery)*/
+
+.block-2 {
+	padding: 10px;
+	max-width: 1189px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #474747;
+	margin: 0 auto;
+}
+
+.create {
+	font-size: 0;
+	margin-bottom: 20px;
+}
+
+.text{
+	max-width: 563px;
+	display: inline-block;
+	margin-right: 38px;
+}
+
+.create h4{
+	color: #D06B00;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+}
+
+.create h5{
+	color: #0E333D;
+	font-size: 59px;
+	font-family: "DM Serif Text", serif;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 1.47;
+	margin-bottom: 25px;
+}
+
+.text-create {
+	color: #474747;
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+.img-1,
+.img-2{
+	max-height: 518px;
+}
+
+.img-1{
+	margin-right: 22px;
+}
+
+/* Стилі для частини третьої (самостійні стилі) */
+
+.overflow {
+	max-width: 1200px;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+.visible,
+.hidden,
+.scroll,
+.auto{
+	max-width: 290px;
+	max-height: 330px;
+	display: inline-block;
+}
+
+.visible {
+overflow: visible;
+}
+
+.hidden {
+overflow: hidden;
+}
+
+.scroll {
+overflow: scroll;
+}
+
+.auto {
+overflow: auto;
+}
