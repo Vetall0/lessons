@@ -1,0 +1,298 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+header,
+footer{
+	width: 100%;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	border: 5px dotted #c56d6d;
+}
+
+main{
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	color: #7D7D7D;
+	font-size: 18px;
+}
+
+/* Частина перша */
+
+.part-1 {
+	padding: 50px 10px 0;
+	max-width: 1218px;
+	margin: 0 auto;
+}
+.top-text p{
+	font-weight: 500;
+	color: #37393F;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 16px;
+}
+
+.top-text h1{
+	color: #37393F;
+	font-size: 60px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.21;
+	margin-bottom: 70px;
+}
+
+.license,
+h2,
+h3{
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 40px;
+	text-transform: capitalize;
+	line-height: 1.21;
+	margin-bottom: 11px;
+}
+
+h3{
+	font-size: 30px;
+	text-transform: capitalize;
+}
+
+.image-1,
+.image-2,
+.text {
+	line-height: 1.46;
+	margin-bottom: 24px;
+}
+
+.text p{
+	margin-bottom: 32px;
+}
+
+.license {
+	color: #40DDB6;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.text,
+.photography,
+.fonts{
+	margin-bottom: 100px;
+}
+
+.photography h3{
+	margin-bottom: 8px;
+}
+
+.image-1,
+.image-2 {
+	color: #40DDB6;
+}
+
+.user-fonts span{
+	color: #40DDB6;
+	font-weight: 500;
+}
+
+/* Частина друга */
+
+.part-2 {
+	max-width: 830px;
+	margin: 0 auto 50px;
+}
+h4{
+	color: #37393F;
+	font-size: 40px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	line-height: 1.27;
+	margin-bottom: 13px;
+}
+
+.content-1 p{
+	margin-bottom: 30px;
+}
+
+.content-1,
+.content-2,
+.content-3{
+	line-height: 1.46;
+	margin-bottom: 35px;
+}
+
+ol,
+ul{
+	margin-bottom: 35px;
+}
+
+li{
+	font-weight: 500;
+	line-height: 2.54;
+	padding-left: 44px;
+}
+
+/* Частина третя */
+
+.part-3 {
+	padding-left: 21px;
+	width: 1219px;
+	color: #807D7E;
+	font-size: 20px;
+	font-family: "Causten", sans-serif;
+	font-weight: 400;
+	margin: 0 auto 50px;
+}
+
+h5,
+h6{
+	font-family: "Core Sans C", sans-serif;
+	font-weight: 650;
+}
+
+h5{
+	color: #3C4242;
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	margin-bottom: 30px;
+}
+
+h6{
+	color: #807D7E;
+	font-size: 20px;
+	line-height: 1.68;
+	letter-spacing: 0.40px;
+	margin-bottom: 25px;
+}
+
+.reexplore p,
+.one-stop p{
+	margin-bottom: 20px;
+	letter-spacing: 0.40px;
+	line-height: 1.68;
+}
+
+.reexplore {
+	margin-bottom: 25px;
+}
+.euphoria {
+	font-weight: 700;
+} 
+
+/* Частина четверта */
+
+.part-4 {
+	width: 1103px;
+	font-family: "Cormorant Infant", serif;
+	font-weight: 700;
+	margin: 0 auto 100px;
+}
+.inline-block {
+	padding-top: 70px;
+	display: inline-block;
+	width: 503px;
+	margin-right: 75px;
+}
+
+.what{
+	color: #D58417;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+}
+
+.title {
+	color: #000;
+	font-size: 64px;
+	line-height: 1;
+	text-transform: capitalize;
+	margin-bottom: 31px;
+}
+
+.text {
+	color: #606060;
+	font-size: 30px;
+	line-height: 1.4;
+}
+
+.pic {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pic-1,
+.pic-2{
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 235px;
+	border: 1px solid #502203;
+}
+
+
+.pic-1{
+	height: 336px;
+	min-width: 177px;
+	margin-right: 20px;
+}
+
+.pic-1 img{
+	margin-left: -10px;
+	padding-top: 14px;
+}
+
+
+.pic-2 {
+	height: 500px;
+	min-width: 307px;
+
+
+}
+
+.pic-2 img{
+	margin-left: -11px;
+	padding-top: 19px;
+}
+
+/* Частина п'ята (самостійна) */
+
+.homework{
+	max-width: 1000px;
+	margin: 0 auto 100px;
+}
+
+.border{
+	border-top: 5px solid #000;
+	border-right: 10px dotted red;
+	border-bottom: 5px dashed green;
+	border-left: 15px double blue;
+	padding: 30px;
+	border-radius: 50px;
+	outline: 15px double yellowgreen;
+	box-shadow: 30px -30px 50px fuchsia,
+	-20px 40px 60px chocolate;
+	opacity: 0.4;
+	margin: 100px;
+}
+
+.minima{
+	color: red;
+	opacity: 0.2;
+}
+
+.fancy-border-radius{
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	padding: 65px;
+	border: 3px solid #000;
+	border-radius: 93% 7% 39% 61% / 61% 7% 93% 39%;
+	box-shadow: inset 10px 10px 50px goldenrod;
+}
+
