@@ -1,0 +1,455 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+header,
+footer{
+	width: 100%;
+	min-height: 70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	border: 3px solid #c56d6d;
+}
+
+header{
+	background-color: yellowgreen;
+}
+
+footer{
+	background: rgb(223,227,39);
+	background: linear-gradient(45deg, rgba(223,227,39,1) 0%, rgba(72,72,241,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+main{
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+}
+
+.homework{
+	font-size: 26px;
+	line-height: 1.3;
+	padding-top: 50px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.homework-1{
+background-color: rgba(255, 0, 0, 0.3);
+background-image: url("../img/background/cat-1.jpg");
+background-repeat: no-repeat;
+background-size: 20%;
+background-attachment: fixed;
+background-position: center;
+margin-bottom: 50px;
+}
+
+.homework-2{
+	background: url("../img/background/cat-1.jpg") 50% 30px / 50% no-repeat,
+	radial-gradient(circle, rgba(227,168,39,0.5) 0%, rgba(200,241,72,0.71) 50%, rgba(0,255,162,0.3) 100%), 
+	url("../img/background/cat-3.jpg") 0 100px repeat-x fixed,
+	url("../img/background/cat-2.jpg") 0 0  repeat-y;
+	margin-bottom: 50px;
+}
+
+.end{
+	text-align: center;
+	letter-spacing: 15px;
+	font-size: 26px;
+	color: red;
+	margin-bottom: 50px;
+}
+
+/* ---------------------------------------- */
+
+.part-1 {
+	max-width: 1023px;
+	margin: 0 auto 50px;
+}
+
+.welcome{
+	margin-bottom: 20px;
+}
+
+.welcome p span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #40DDB6;
+	margin-right: 6px;
+}
+
+.welcome p {
+	color: #37393F;
+	text-transform: capitalize;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.welcome h2 {
+	color: #37393F;
+	max-width: 414px;
+	text-transform: capitalize;
+	font-size: 40px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.main-text {
+	max-width: 673px;
+	color: #7D7D7D;
+	font-size: 18px;
+	line-height: 1.46;
+	margin-bottom: 20px;
+}
+
+.main-text p {
+	margin-bottom: 15px;
+}
+
+.list li{
+	color: #37393F;
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	line-height: 1.65;
+	padding-left: 35px;
+	margin-bottom: 23px;
+	background: url("../img/icon/consulting-check.svg") 0 3px no-repeat;
+}
+
+ul {
+	margin-bottom: 43px;
+}
+
+.exp,
+.awards {
+	width: 295px;
+	height: 140px;
+	border: 1px solid #E3E3E3;
+	display: inline-block;
+	padding: 31px 32px 32px;
+}
+
+.exp {
+	margin-right: 21px;
+}
+
+.experience{
+	background: url("../img/icon/consulting-diploma.svg") 0 0 no-repeat;
+}
+
+.experience h3,
+.winner h3 {
+	color: #37393F;
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 1.5;
+	margin-bottom: 3px;
+	padding-left: 58px;
+}
+
+.experience p,
+.winner p {
+	color: #7D7D7D;
+	font-size: 16px;
+	line-height: 1.35;
+	padding-left: 58px;
+}
+
+.winner {
+	background: url("../img/icon/consulting-cup.svg") 0 0 no-repeat;
+}
+
+.awards {
+	margin-bottom: 37px;
+}
+
+.link a {
+	display: inline-block;
+	width: 184px;
+	height: 65px;
+	background-color: #6B77E5;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.22;
+	text-transform: capitalize;
+	padding: 21px 27px 22px;
+}
+
+/* ---------------------------------------- */
+
+.part-2 {
+	max-width: 1220px;
+	margin: 0 auto 50px;
+}
+.projects {
+	margin-left: 184px;
+	max-width: 852px;
+	text-align: center;
+	margin-bottom: 47px;
+}
+
+.projects p,
+.projects h2 {
+	color: #37393F;
+	text-transform: capitalize;
+	margin-bottom: 14px;
+}
+
+.projects p {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.projects h2 {
+	font-size: 40px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	line-height: 1.21;
+} 
+
+.projects p span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #40DDB6;
+	margin-right: 6px;
+}
+
+.content p {
+	color: #7D7D7D;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.46;
+}
+
+.background-photo {
+	font-size: 0;
+}
+
+.photo-1,
+.photo-2,
+.photo-3,
+.photo-4,
+.photo-5,
+.photo-6 {
+	display: inline-block;
+	min-width: 384px;
+	min-height: 582px;
+}
+
+.title-1,
+.title-2,
+.title-3,
+.title-4,
+.title-5,
+.title-6 {
+	padding-top: 525px;
+	color: #37393F;
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 10px;
+}
+
+.date-1,
+.date-2,
+.date-3,
+.date-4,
+.date-5,
+.date-6 {
+	color: #7D7D7D;
+	font-size: 14px;
+	line-height: 1.46;
+	padding-left: 25px;
+	background: url('../img/icon/calendar.svg') 0 0 no-repeat;
+}
+
+.photo-row-1 {
+	margin-bottom: 58px;
+}
+
+.photo-1 {
+	background: url('../img/cons-1.jpg') 0 0 no-repeat;
+	margin-right: 34px;
+}
+
+.photo-2 {
+	background: url('../img/cons-2.jpg') 0 0 no-repeat;
+	margin-right: 34px;
+}
+
+.photo-3 {
+	background: url('../img/cons-3.jpg') 0 0 no-repeat;
+}
+
+.photo-4 {
+	background: url('../img/cons-4.jpg') 0 0 no-repeat;
+	margin-right: 34px;
+}
+
+.photo-5 {
+	background: url('../img/cons-5.jpg') 0 0 no-repeat;
+	margin-right: 34px;
+}
+
+.photo-6 {
+	background: url('../img/cons-6.jpg') 0 0 no-repeat;
+}
+
+/* ---------------------------------------- */
+
+.part-3 {
+	max-width: 1440px;
+	padding-left: 121px;
+	margin: 0 auto 50px;
+}
+
+.content-india {
+max-width: 1219px;
+}
+
+.india h3 {
+	color: #3C4242;
+	font-size: 28px;
+	font-family: 'Core Sans C', sans-serif;
+	font-weight: 650;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+}
+
+.india h3 span {
+	display: inline-block;
+	width: 6px;
+	height: 28px;
+	background-color: #8A33FD;
+	border-radius: 10px;
+	margin-right: 15px;
+}
+
+.india {
+	margin-bottom: 30px;
+}
+
+.online,
+.shop,
+.link-india {
+	padding-left: 21px;
+}
+
+.online h4,
+.shop h4 {
+	color: #807D7E;
+	font-size: 20px;
+	font-family: 'Core Sans C', sans-serif;
+	font-weight: 650;
+	line-height: 1.68;
+	letter-spacing: 0.40px;
+	margin-bottom: 25px;
+}
+
+.online p,
+.shop p {
+	color: #807D7E;
+	font-size: 20px;
+	font-family: 'Causten', sans-serif;
+	font-weight: 400;
+	line-height: 1.68;
+	letter-spacing: 0.40px;
+	margin-bottom: 20px;
+}
+
+.online p span,
+.shop p span {
+	font-weight: 700;
+}
+
+.online {
+	padding-top: 25px;
+}
+
+.shop {
+	padding-bottom: 20px;
+}
+
+.link-india {
+	color: #807D7E;
+	font-size: 20px;
+	font-family: 'Core Sans C', sans-serif;
+	font-weight: 650;
+	line-height: 1.68;
+	letter-spacing: 0.40px;
+	text-transform: capitalize;
+}
+
+/* ---------------------------------------- */
+
+.part-4 {
+	max-width: 1440px;
+	padding-left: 100px;
+	margin: 0 auto 100px;
+	font-size: 0;
+}
+
+.fashion {
+	display: inline-block;
+	padding: 183px 0 0 74px;
+	min-width: 614px;
+	min-height: 639px;
+	background: url('../img/euphoria-1.jpg') 0 0 no-repeat;
+}
+
+.fashion h5 {
+	max-width: 466px;
+	color: white;
+	font-size: 34px;
+	font-family: 'Core Sans C', sans-serif;
+	font-weight: 850;
+	text-transform: uppercase;
+	line-height: 1.47;
+	letter-spacing: 0.21px;
+	margin-bottom: 30px;
+}
+
+.fashion p {
+	max-width: 451px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Causten', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+}
+
+.link-shop {
+	display: inline-block;
+	min-width: 168px;
+	min-height: 46px;
+	border-radius: 8px;
+	background: #ffffff;
+}
+
+.link-shop a {
+	display: inline-block;
+	color: #3C4242;
+	font-size: 18px;
+	font-family: 'Causten', sans-serif;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding: 12px 44px;
+}
+
+.photo-fashion {
+	display: inline;
+	max-width: 626px;
+}
