@@ -163,7 +163,7 @@ h6 ~ p {
 }
 
 .box-target {
-margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .box-yellow {
@@ -286,9 +286,6 @@ margin-bottom: 20px;
 	vertical-align: middle;
 }
 
-.game {
-}
-
 .game-box > div {
 	background-color: #00bac7;
 	visibility: hidden;
@@ -319,9 +316,9 @@ margin-bottom: 20px;
 }
 
 .line-4 {
-margin-left: 220px;
-height: 150px;
-width: 30px;
+	margin-left: 220px;
+	height: 150px;
+	width: 30px;
 }
 
 .line-5 {
@@ -421,42 +418,6 @@ width: 30px;
 .line-11:hover {
 	visibility: visible;;
 }
-
-/* .line-2:hover + .line-1,
-.line-1:hover {
-	width: 50%;
-} */
-
-
-/* .line-2:hover + .line-3,
-.line-3:hover {
-	height: 20%;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ========================Part-1======================= */
 
@@ -624,7 +585,7 @@ width: 30px;
 
 
 .bottom-text-2 > div:not(:last-child) {
-margin-bottom: 31px;
+	margin-bottom: 31px;
 }
 
 .bottom-block-1,
@@ -682,8 +643,8 @@ margin-bottom: 31px;
 }
 
 .link-about:active {
-background-color: #3c416e;
-box-shadow: none;
+	background-color: #3c416e;
+	box-shadow: none;
 }
 
 /* ========================Part-3======================= */
@@ -721,7 +682,7 @@ box-shadow: none;
 }
 
 .head-title-2 {
-margin-bottom: 41px;
+	margin-bottom: 41px;
 }
 
 .boxes {
@@ -881,7 +842,4 @@ margin-bottom: 41px;
 .part-4 div a:hover {
 	text-decoration: underline;
 	color: rgb(0, 0, 128);
-}
-
-.link-chapter-3 {
 }
