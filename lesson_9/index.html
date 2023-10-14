@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Урок №9 (Псевдокласи та псевдоелементи)</title>
+</head>
+
+<body>
+
+	<header>Урок №9 (Псевдокласи та псевдоелементи)</header>
+
+	<main>
+
+		<div class="main-practica">
+			<div class="practica">
+				<div class="psevdoclass">
+					<h5>Псевдокласи</h5>
+					<div class="psevdo-hover">
+						<h6>:hover</h6>
+						<p>Псевдоклас :hover спрацьовує при наведенні на нього курсором миші</p>
+						<div class="hover-practic">
+							<div class="practic-1">
+								<p>Наведи на мене</p>
+							</div>
+							<div class="practic-2">
+								<p>І на мене</p>
+							</div>
+							<div class="practic-3">
+								<p>На мене теж</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="psevdo-focus">
+						<h6>:focus</h6>
+						<p>Виділяє інтерактивний елемент на сторінці (можна виділити за допомогою миші, або клавіатури - клавішою "tab" або курсором)</p>
+						<ul class="link-focus">
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+						</ul>
+					</div>
+
+					<div class="psevdo-visited">
+						<h6>:visited</h6>
+						<p>Позначає відвідані сторінки за посиланням</p>
+						<ul class="link-visited">
+							<li><a target="_blank" href="http://www.google.cn/">Google Китай</a></li>
+							<li><a target="_blank" href="https://www.google.co.jp/">Google Японія</a></li>
+							<li><a target="_blank" href="http://www.google.com.au">Google Австралія</a></li>
+							<li><a target="_blank" href="http://www.google.ca">Google Канада</a></li>
+							<li><a target="_blank" href="http://www.google.ge">Google Грузія</a></li>
+						</ul>
+					</div>
+
+					<div class="psevdo-active">
+						<h6>:active</h6>
+						<p>Змінює зовнішній вигляд посилання в момент кліку по посиланню</p>
+						<ul class="link-active">
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+							<li><a href="#">Інтерактивний пункт меню</a></li>
+						</ul>
+					</div>
+					<div class="psevdo-target">
+						<h6>:target</h6>
+						<p>Звернення до елемента у стані "ефекту від посилання з іншого об'єкту"</p>
+						<div class="box-target">
+							<div id="box-yellow" class="box-yellow"></div>
+							<div id="box-blue" class="box-blue"></div>
+							<div id="box-green" class="box-green"></div>
+						</div>
+						<div class="themes">
+							<a class="day" href="#box-yellow">Перший колір</a>
+							<a class="blue" href="#box-blue">Другий колір</a>
+							<a class="green" href="#box-green">Третій колір</a>
+						</div>
+					</div>
+
+					<div class="psevdo-position">
+						<h6>Псевдокласи положення у коді</h6>
+						<p>:first-child — звернення до першого елементу в коді:</p>
+						<p>:first-of-type — звернення до першого вказаного об'єкту в коді </p>
+						<p>:last-child — звернення до останнього елементу в коді:</p>
+						<p>:last-of-type — звернення до останнього вказаного об'єкту в коді:</p>
+						<p>:nth-child() —  звернення до конкретного елементу в коді:</p>
+						<p>:not() — псевдоклас виключення (для всіх, окрім…)</p>
+						<ul class="position-first">
+							<li>Перший</li>
+							<li>Другий</li>
+							<li>Третій</li>
+							<li>Четвертий</li>
+							<li>П'ятий</li>
+							<li>Шостий</li>
+							<li>Сьомий</li>
+						</ul>
+						<ul class="position-first-type">
+							<li>Перший</li>
+							<li>Другий</li>
+							<li>Третій</li>
+							<li>Четвертий</li>
+							<li>П'ятий</li>
+							<li>Шостий</li>
+							<li>Сьомий</li>
+						</ul>
+						<ul class="position-last">
+							<li>Перший</li>
+							<li>Другий</li>
+							<li>Третій</li>
+							<li>Четвертий</li>
+							<li>П'ятий</li>
+							<li>Шостий</li>
+							<li>Сьомий</li>
+						</ul>
+						<ul class="position-last-type">
+							<li>Перший</li>
+							<li>Другий</li>
+							<li>Третій</li>
+							<li>Четвертий</li>
+							<li>П'ятий</li>
+							<li>Шостий</li>
+							<li>Сьомий</li>
+						</ul>
+						<ul class="position-nth">
+							<li>Перший</li>
+							<li>Другий</li>
+							<li>Третій</li>
+							<li>Четвертий</li>
+							<li>П'ятий</li>
+							<li>Шостий</li>
+							<li>Сьомий</li>
+						</ul>
+						<ul class="position-not">
+							<li>Перший</li>
+							<li>Другий</li>
+							<li>Третій</li>
+							<li>Четвертий</li>
+							<li>П'ятий</li>
+							<li>Шостий</li>
+							<li>Сьомий</li>
+						</ul>
+					</div>
+				</div>
+				<div class="psevdoelement">
+					<h5>Псевдоелементи</h5>
+					<div class="psev-element">
+						<h6>::before та ::after</h6>
+						<p>Псевдоелементи ::before та ::after дозволяють добавляти елементи напочатку або в кінці вибраного блоку не роблячи зміни в HTML</p>
+						<ul class="link-element">
+							<li>Пункт маркованого списку</li>
+							<li>Пункт маркованого списку</li>
+							<li>Пункт маркованого списку</li>
+							<li>Пункт маркованого списку</li>
+							<li>Пункт маркованого списку</li>
+							<li>Пункт маркованого списку</li>
+							<li>Пункт маркованого списку</li>
+							<li>Пункт маркованого списку</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="game">
+					<h5>Game</h5>
+					<div class="game-box">
+						<div class="line-1">
+							<p>Start</p>
+						</div>
+						<div class="line-2"></div>
+						<div class="line-3"></div>
+						<div class="line-4"></div>
+						<div class="line-5"></div>
+						<div class="line-6"></div>
+						<div class="line-7"></div>
+						<div class="line-8"></div>
+						<div class="line-9"></div>
+						<div class="line-10"></div>
+						<div class="line-11">
+							<p>Finish</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- ============================================================================== -->
+
+		<div class="part-1">
+			<div class="main-text">
+				<h2>Why Us For International Business Management Consulting!</h2>
+				<p>Completely synergized resourced taxings relationships premiers markets ultivate one-to-one customer service with robust ideas dynamically innovated resources leveling customer service for state of the art customer service innovate product for reliable supply engage web services cutting-edge deliverables.</p>
+			</div>
+			<div class="secondary-text">
+				<h3>Proactively envisioned multimedia based expertise media growth superior collaboration.</h3>
+				<p>One-to-one customer service with robust ideas dynamically innovated resources for reliable supply engage web services cutting-edge deliverables.</p>
+			</div>
+			<div class="bottom-block">
+				<img class="bootom-image" src="img/laptop.jpg" alt="laptop">
+				<div class="bottom-text-1">
+					<h2>Our benefits</h2>
+					<p>Incubate standards compliant channels benefits.</p>
+					<ul>
+						<li>Credibly reintermediate backend</li>
+						<li>Holistically foster superior</li>
+						<li>Distinctively exploit optimal</li>
+					</ul>
+				</div>
+			</div>
+			<div class="faq">
+				<h2>Frequently Asked Questions</h2>
+				<p>Leveling customer service for state of the art customer service innovate product for reliable supply engage web services cutting-edge deliverables.</p>
+			</div>
+
+		</div>
+
+		<div class="part-2">
+			<div class="head-text">
+				<div class="welcome">
+					<div class="title">
+						<p>Welcome Whitecollar</p>
+					</div>
+					<h2>We Care About Your Business Plan.</h2>
+					<p>Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy foster collaborative thinking to further the overal.</p>
+					<p>Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy </p>
+				</div>
+			</div>
+			<div class="bottom-text-2">
+				<div class="bottom-block-1">
+					<h3>Our Vision</h3>
+					<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta clickthroughs.</p>
+				</div>
+				<div class="bottom-block-2">
+					<h3>Our Mision</h3>
+					<p>Podcasting operational change management inside of workflows to establish a framework.</p>
+				</div>
+			</div>
+			<a href="#" class="link-about">More About Us</a>
+		</div>
+
+		<div class="part-3">
+			<div class="head-title-2">
+				<p>Work Process</p>
+				<h2>How We Work</h2>
+			</div>
+			<div class="boxes">
+				<div class="content">
+					<div class="box-content-1">
+						<div class="box-image-1">
+							<img src="/img/icon/icon-1.svg" alt="icon-1">
+						</div>
+						<div class="text-content">
+							<h4>Make Appointment</h4>
+							<p>Leverage agile frameworks provide synopsishigh level overviews value proposition.</p>
+							<a href="#">Testimonials</a>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="box-content-2">
+						<div class="box-image-2">
+							<img src="/img/icon/icon-2.svg" alt="icon-2">
+						</div>
+						<div class="text-content">
+							<h4>Consultation</h4>
+							<p>Leverage agile frameworks provide synopsishigh level overviews value proposition.</p>
+							<a href="#">Testimonials</a>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="box-content-3">
+						<div class="box-image-3">
+							<img src="img/icon/icon-3.svg" alt="icon-3">
+						</div>
+						<div class="text-content">
+							<h4>Enjoy the Service</h4>
+							<p>Leverage agile frameworks provide synopsishigh level overviews value proposition. </p>
+							<a href="#">Testimonials</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="part-4">
+			<div class="chapter-1">
+				<h5>We Develop Create Custom Jewels.</h5>
+			</div>
+			<div class="chapter-2">
+				<a class="link-chapter-2" href="#">
+					<img src="/img/jewels-1.jpg" alt="One ring">
+					<div class="price">
+						<p>Embossed hoop earrings</p>
+						<p>$144.00</p>
+					</div>
+				</a>
+			</div>
+			<div class="chapter-3">
+				<h6>#02 <br> new jewellery collection</h6>
+				<a class="link-chapter-3" href="#">
+					<img src="img/jewels-2.jpg" alt="Two rings">
+					<div class="price">
+						<p>Embossed hoop earrings</p>
+						<p>$144.00</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>Живи, а працюй у вільний час!!!</footer>
+
+</body>
+
+</html>
