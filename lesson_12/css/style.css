@@ -1,0 +1,265 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+header,
+footer{
+	width: 100%;
+	min-height: 70px;
+	padding-top: 15px;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	text-align: center;
+	border: 3px solid #c56d6d;
+}
+
+header{
+	background-color: yellowgreen;
+	margin-bottom: 30px;
+}
+
+footer{
+	background: linear-gradient(45deg, rgba(223,227,39,1) 0%, rgba(72,72,241,1) 50%, rgba(0,212,255,1) 100%);
+	color: yellow;
+}
+
+.top-page {
+	position: fixed;
+	max-width: 1220px;
+	width: 100px;
+	right: 0;
+	bottom: 0;
+}
+
+main {
+	max-width: 1220px;
+	margin: 0 auto;
+}
+
+/* ------Practica------- */
+
+.head-menu {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	padding: 50px;
+	background-color: rgb(109, 155, 18);
+	border-radius: 30px;
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	z-index: 50;
+}
+
+.head-menu__item-list-1 {
+	display: inline-block;
+	position: relative;
+}
+
+.head-menu__link-list-1 {
+	display: inline-block;
+	background-color: #ff8a8a;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+.head-menu__item-list-1:hover .head-menu__link-list-1{
+	background-color: #e04e4e;
+}
+
+.head-menu__list-2 {
+	position: absolute;
+	min-width: 250px;
+	left: 0;
+	top: 100%;
+	padding-top: 5px;
+	z-index: 3;
+	visibility: hidden;
+}
+
+.head-menu__link-list-2 {
+	position: relative;
+	width: 100%;
+	background-color: #388ec0;
+	border: 1px solid;
+	border-radius: 10px;
+	padding-top: 5px;
+}
+
+.head-menu__item-list-2:hover .head-menu__link-list-2 {
+	background-color: #6cacd1;
+}
+
+.head-menu__item-list-1:hover .head-menu__list-2 {
+visibility: visible;
+}
+
+.head-menu__item-list-1 a {
+	padding: 10px;
+}
+
+.head-menu__item-list-1--marging:not(:last-child) {
+	margin-right: 50px;
+}
+
+.head-menu__list-3 {
+	position: absolute;
+	top: 33%;
+	left: 100%;
+	min-width: 250px;
+	padding-top: 5px;
+}
+
+.head-menu__link-list-3 {
+	width: 100%;
+	background-color: rgb(255, 251, 0);
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+.head-menu__list-3 {
+	visibility: hidden;
+}
+
+.head-menu__item-list-3:hover .head-menu__link-list-3 {
+	background-color: rgb(255, 208, 0);
+}
+
+.head-menu__item-list-2:hover .head-menu__list-3 {
+	visibility: visible;
+}
+
+.sticky {
+	padding-top: 100px;
+	color: #7D7D7D;
+	font-size: 24px;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	line-height: 1.35;
+}
+
+.sticky__title {
+	position: sticky;
+	top: 150px;
+	width: 100%;
+	background: linear-gradient(45deg, rgb(223,227,39) 0%, rgb(72,195,241) 100%);
+	border-radius: 30px;
+	color: #505050;
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	padding: 30px 0;
+}
+
+.sticky__title--marging {
+	margin-bottom: 30px;
+}
+
+.sticky__text--marging:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+/* ------Consulting------- */
+
+.photo-desk {
+	padding: 50px 0;
+	font-size: 0;
+}
+
+.photo-desk__title p {
+	color: #7D7D7D;
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	line-height: 1.35;
+}
+
+.photo-desk__title h4 {
+	color: #37393F;
+	font-size: 25px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	margin-bottom: 14px;
+}
+
+.photo-desk__title {
+	position: absolute;
+	left: 22px;
+	bottom: 22px;
+	text-align: center;
+	max-width: 341px;
+	min-height: 114px;
+	width: 100%;
+	padding: 24px 40px;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.photo-desk__box {
+	position: relative;
+	display: inline-block;
+}
+
+.photo-desk__main-photo {
+	max-width: 386px;
+	max-height: 532px;
+	width: 100%;
+}
+
+.photo-desk__sociale {
+	position: absolute;
+	bottom: 46%;
+	right: 28%;
+	z-index: 2;
+}
+
+.photo-desk__sociale img {
+	width: 50px;
+	height: 50px;
+	max-width: 100%;
+	border-radius: 50%;
+	visibility: hidden;
+}
+
+.photo-desk__box:hover .photo-desk__sociale img {
+	visibility: visible;
+}
+
+.photo-desk__box::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #6B77E5B2;
+	visibility: hidden;
+}
+
+.photo-desk__box:hover:before {
+	visibility: visible;
+}
+
+.photo-desk__sociale img:hover {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	outline: 3px solid #b4bbfc;
+}
+
+.photo-desk__sociale--marging a:not(:last-child) {
+	margin-right: 13px;
+}
+
+.photo-desk__box--marging:not(:last-child) {
+	margin-right: 31px;
+}
+
+.photo-desk__line-1--margin {
+	margin-bottom: 31px;
+}
