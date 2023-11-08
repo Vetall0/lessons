@@ -40,13 +40,13 @@ main {
 margin: -1100px 0 0 50px;
 }
 
-.car-body {
+.body-car__full {
 	position: relative;
-	transform: translateY(165px);
+	transform: translateY(330px);
 	z-index: 2;
 }
 
-.car-body__front {
+.body-car__front {
 	transform: translate(900px, 400px);
 	width: 300px;
 	height: 220px;
@@ -54,7 +54,7 @@ margin: -1100px 0 0 50px;
 	background-color: rgb(0, 0, 177);
 }
 
-.car-body__rear {
+.body-car__rear {
 	width: 1000px;
 	height: 400px;
 	border-radius: 48% 43% 26% 4% / 89% 78% 0% 6%;
