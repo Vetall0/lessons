@@ -382,7 +382,7 @@ margin-bottom: 50px;
 }
 
 .line-1__fig:hover .line-1__item-2 {
-	transform: scale(70%);
+	transform: scale(0.7);
 	transition: all 0.8s ease 0s
 }
 
@@ -410,7 +410,7 @@ transition: all 0.8s ease 0s
 /* ---------------------2D комбінації------------------------- */
 
 .line-2__fig:hover .line-2__item-1 {
-	transform: scale(50%) rotate(720deg);
+	transform: scale(0.5) rotate(720deg);
 	transition: all 1.6s ease 0s
 }
 
