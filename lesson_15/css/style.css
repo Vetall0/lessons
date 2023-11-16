@@ -1,0 +1,544 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+footer{
+	width: 100%;
+	min-height: 70px;
+	padding-top: 15px;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	text-align: center;
+	border: 3px solid #c56d6d;
+}
+
+header{
+	background-color: yellowgreen;
+	margin-bottom: 34px;
+}
+
+footer{
+	background: linear-gradient(45deg, rgba(223,227,39,1) 0%, rgba(72,72,241,1) 50%, rgba(0,212,255,1) 100%);
+	color: yellow;
+}
+
+main {
+	margin: 0 auto;
+	
+}
+
+
+/* ========== Euphoria (Sign In) ========== */
+
+.sign-in {
+	width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	font-family: "Causten", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 31px;
+	justify-content: center;
+}
+
+.sign-in__logo {
+	max-width: 91px;
+	width: 100%;
+	max-height: 45px;
+	background: url('../img/Logo.svg') 0 0 no-repeat;
+	margin-right: 164px;
+}
+
+.sign-in__search {
+	color: #807D7E;
+	width: 184px;
+	height: 46px;
+	border-radius: 8px;
+	background-color: #F6F6F6;
+	padding: 8px 48px;
+	margin-right: 210px;
+	transition: 0.3s;
+}
+
+.sign-in__search:hover {
+	background-color: #cccccc;
+}
+
+.sign-in__search::before {
+	content: "";
+	position: relative;
+	top: 4px;
+	width: 20px;
+	height: 20px;
+	background: url('../img/icon/search.svg') 0 0 no-repeat;
+	margin-right: 12px;
+}
+
+.sign-in__lenguage {
+	color: #333;
+	font-weight: 400;
+	margin: 12px 0;
+	margin-right: 60px;
+}
+
+.sign-in__arrow {
+	display: inline-flex;
+	position: relative;
+	top: -2px;
+	background: url('../img/icon/menu-arrow.svg') 0 0 no-repeat;
+	width: 10px;
+	height: 5px;
+	margin-left: 19px;
+	transform: rotate(90deg);
+	transition: 0.3s;
+}
+
+.sign-in__lenguage:hover .sign-in__arrow {
+	transform: rotate(0deg);
+}
+
+.sign-in__login {
+	display: inline-flex;
+	color: #FFF;
+	justify-content: center;
+	width: 140px;
+	height: 46px;
+	border-radius: 8px;
+	background-color: #8A33FD;
+	align-items: center;
+	margin-right: 29px;
+	transition: 0.3s;
+}
+
+.sign-in__login:hover {
+	background-color: #ffffff;
+	color:  #8A33FD;
+	outline: 1px solid #8A33FD;
+}
+
+.sign-in__sign-up {
+	display: inline-flex;
+	color: #8A33FD;
+	justify-content: center;
+	width: 156px;
+	height: 46px;
+	border-radius: 8px;
+	border: 1px solid #3C4242;
+	align-items: center;
+	transition: 0.3s;
+}
+
+.sign-in__sign-up:hover {
+	background-color: #8A33FD;
+	color:  #ffffff;
+	border: none;
+}
+
+
+/* ========== Euphoria (Categories For Men) ========== */
+
+
+.shop {
+	max-width: 1240px;
+	margin: 0 auto 100px;
+}
+
+.title {
+	color: #3C4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 0.99;
+	letter-spacing: 0.68px;
+	margin: 0 auto 70px;
+}
+
+.shop__produkt {
+	display: flex;
+	flex-shrink: 1;
+	flex-wrap: wrap;
+	gap: 50px;
+	margin: 0 auto;
+}
+
+.title::before {
+	content: "";
+	position: relative;
+	top: 3px;
+	width: 6px;
+	height: 30px;
+	border-radius: 10px;
+	background: #8A33FD;
+	margin-right: 20px;
+}
+
+.produkt-man {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 270px;
+}
+
+.produkt-man__photo {
+	min-width: 270px;
+	max-height: 393px;
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.produkt-man__photo img {
+	transition: 0.3s;
+}
+
+.produkt-man__photo img:hover{
+	transform: scale(1.05);
+}
+
+.produkt-man__description {
+	display: flex;
+	flex-grow: 1;
+}
+
+.produkt-man__item-description {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.produkt-man__name {
+	color: #2A2F2F;
+	font-family: "Causten",sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.56;
+	letter-spacing: -0.715px;
+	margin-bottom: 4px;
+	flex-grow: 1;
+}
+
+.produkt-man__link-name{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.produkt-man__text {
+	color: #7F7F7F;
+	font-family: "Causten",sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2.08;
+	letter-spacing: -0.536px;
+	flex-wrap: wrap;
+}
+
+.produkt-man__arrow {
+	align-self: flex-start;
+	min-height: 25px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 19px;
+	background: url('../img/icon/arrow.svg') 0 10px no-repeat;
+}
+
+
+/* ========== Euphoria (Wishlist) ========== */
+
+
+.wishlist {
+	display: flex;
+	flex-direction: column;
+	max-width: 903px;
+	margin-left: 445px;
+	font-family: "Causten",sans-serif;
+	margin-bottom: 100px;
+}
+
+.wishlist__title {
+	display: inline-block;
+	color: #3C4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	margin-bottom: 20px;
+}
+
+.wishlist__product {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 30px;
+}
+
+.product__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.product__line-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product__cross {
+	width: 22px;
+	height: 22px;
+	background: url('../img/icon/close-cross.svg') 0 0 no-repeat;
+	transition: 0.3s;
+}
+
+.product__cross:hover {
+	transform: rotate(90deg) scale(1.1);
+}
+
+.product__photo {
+	max-width: 110px;
+	max-height: 110px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+
+.product__photo:hover {
+	transform: scale(1.05);
+}
+
+.product__column-description {
+	display: flex;
+	flex-direction: column;
+	min-height: 102px;
+	justify-content: space-between;
+	color: #3C4242;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.44px;
+}
+
+.product__column-description span {
+	color: #807D7E;
+	font-weight: 500;
+}
+
+.product__model:hover {
+	color: #8A33FD;
+	text-decoration: underline;
+}
+
+.product__left-part {
+	display: flex;
+	gap: 36px;
+	align-items: center;
+}
+
+.product__right-part {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	justify-content: flex-end;
+}
+
+.product__price {
+	color: #807D7E;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.44px;
+	padding-right: 14px;
+}
+
+.product__cart {
+	color: #FFF;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.2;
+	background-color: #8A33FD;
+	border-radius: 8px;
+	padding: 14px 28px;
+	min-width: 143px;
+	min-height: 50px;
+	transition: 0.3s;
+	margin-right: 7px;
+}
+
+.product__cart:hover {
+	background-color: #fff;
+	color: #8A33FD;
+	outline: 1px solid #8A33FD;
+}
+
+.product__bottom-line {
+	border-bottom: 1px solid #EDEEF2;
+	width: 894px;
+	padding-bottom: 30px;
+}
+
+/* ========== Euphoria (My Orders) ========== */
+
+
+.orders {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 100px;
+	margin-bottom: 100px;
+}
+
+.my-orders__full:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.my-orders {
+	min-width: 895px;
+	font-family: "Causten",sans-serif;
+	font-size: 14px;
+}
+
+.my-orders__information {
+	color: #807D7E;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.my-orders__information span {
+	color: #BEBCBD;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+.my-orders__order-info {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+
+}
+
+.info-order__delivery {
+	display: flex;
+	flex-basis: 135px;
+	justify-content: space-between;
+	border-radius: 8px;
+	background-color: #F6F6F6;
+	padding: 0 47px;
+}
+
+.info-order__left-part,
+.info-order__right-part {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 28px;
+}
+
+.info-order__right-part {
+	text-align: right;
+}
+
+.info-order__number {
+	color: #3C4242;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.info-order__number:hover {
+	color: #8A33FD;
+	text-decoration: underline;
+}
+
+.info-order__date {
+	margin-top: 14px;
+}
+
+.info-order__estiminated,
+.info-order__payment {
+	margin-top: 7px;
+}
+
+.item__bottom-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item__left-part {
+	display: flex;
+	gap: 25px;
+}
+
+.item__left-part img {
+	max-width: 96px;
+	max-height: 96px;
+	width: 100%;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+
+.item__left-part img:hover {
+	transform: scale(1.05);
+}
+
+.item__descroption {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #3C4242;
+	padding: 3px 0;
+}
+
+.item__descroption span {
+	font-weight: 600;
+}
+
+.item__model:hover {
+	color: #8A33FD;
+	text-decoration: underline;
+}
+
+.item__total {
+	color: #807D7E;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.item__link {
+	width: 144px;
+	height: 50px;
+	border-radius: 8px;
+	background-color: #8A33FD;
+	color: #FFF;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.2;
+	padding: 14px 28px;
+	transition: 0.3s;
+}
+
+.item__link:hover {
+	outline: 1px solid #8A33FD;
+	color: #8A33FD;
+	background-color: #fff;
+}
+
+.my-orders__bottom-line {
+	border-bottom: 1px solid #EDEEF2;
+	padding-bottom: 30px;
+}
