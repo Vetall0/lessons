@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Урок №16 (HTML-форми)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>Урок №16 (HTML-форми)</header>
+		<main class="main">
+
+			<!-- =============== My Info =============== -->
+
+			<div class="info">
+				<h2 class="my-info">My Info</h2>
+				<h3 class="address">Add Address</h3>
+				<div class="info__address">
+					<form id="form-info" class="info__form form" method="GET" action="#">
+
+						<div class="form__list form__list--margin">
+							<div class="form__item">
+								<label class="form__label" for="first-name">First Name*</label>
+								<input required autocomplete="on" id="first-name" name="first-name" placeholder="First Name" type="text">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="last-name">Last Name*</label>
+								<input required autocomplete="on" id="last-name" name="last-name" placeholder="Last Name" type="text">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="country">Country / Region*</label>
+								<input required autocomplete="on" id="country" name="country" placeholder="Country / Region" type="text">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="company">Company Name</label>
+								<input autocomplete="on" id="company" name="company" placeholder="Company (optional)" type="text">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="address-1">Street Address*</label>
+								<input required autocomplete="on" id="address-1" name="address-1" placeholder="House number and street name" type="text">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="address-2">Apt, suite, unit</label>
+								<input autocomplete="on" id="address-2" name="address-2" placeholder="apartment, suite, unit, etc. (optional)" type="text">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="city">City*</label>
+								<input required autocomplete="on" id="city" name="city" placeholder="Town / City" type="text">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="state">State*</label>
+								<select required class="form__state" name="state" placeholder="State" id="state">
+									<option value="" hidden selected>State</option>
+									<option value="California">California</option>
+									<option value="Florida">Florida</option>
+									<option value="Kansas">Kansas</option>
+									<option value="Minnesota">Minnesota</option>
+									<option value="Massachusetts">Massachusetts</option>
+									<option value="New Hampshire">New Hampshire</option>
+									<option value="New York">New York</option>
+									<option value="North Carolina">North Carolina</option>
+									<option value="South Dakota">South Dakota</option>
+									<option value="Tennessee">Tennessee</option>
+									<option value="Washington">Washington</option>
+									<option value="West Virginia">West Virginia</option>
+									<option value="Wyoming">Wyoming</option>
+								</select>
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="phone">Phone*</label>
+								<input required autocomplete="on" id="phone" name="phone" placeholder="Phone" type="tel">
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="postal-code">Postal Code*</label>
+								<input required autocomplete="on" id="postal-code" name="postal-code" placeholder="Postal Code" type="text">
+							</div>
+							<div class="form__item form__item--delivery">
+								<label class="form__label" for="delivery">Delivery Instruction</label>
+								<textarea class="form__delivery" id="delivery" name="delivery" autocomplete="off" placeholder="Delivery Instruction"></textarea>
+							</div>
+						</div>
+						<div class="form__checkbox">
+							<div class="form__shiping-checkbox">
+								<input id="shiping" class="form__input form__shiping--chan" autocomplete="off" name="shiping" type="checkbox">
+								<label class="form__label-checkbox" for="shiping"><span>Set as default shipping address</span></label>
+							</div>
+							<div class="form__billing-checkbox">
+								<input id="billing" class="form__input form__billing--chan" autocomplete="off" name="billing" type="checkbox">
+								<label class="form__label-checkbox" for="billing"><span>Set as default billing address</span></label>
+							</div>
+						</div>
+
+					</form>
+
+					<div class="info__button">
+						<button class="button-submit" form="form-info" type="submit">submit</button>
+						<button class="button-reset" form="form-info" type="reset">cancel</button>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- =============== Check Out =============== -->
+
+			<div class="checkout">
+				<h2>Check Out</h2>
+				<h3>Billing Details</h3>
+				<div class="checkout__billing form-checkout">
+					<form id="form-checkout" action="#" method="get" class="form-checkout__all">
+						<div class="form-checkout__list form-checkout__list--margin">
+							<div class="form-checkout__top top">
+								<div class="top__item">
+									<label class="top__label" for="ch-first">First Name*</label>
+									<input required autocomplete="on" id="ch-first" name="ch-first" placeholder="First Name" type="text">
+								</div>
+								<div class="top__item">
+									<label class="top__label" for="ch-last">Last Name*</label>
+									<input required autocomplete="on" id="ch-last" name="ch-last" placeholder="Last Name" type="text">
+								</div>
+								<div class="top__item">
+									<label class="top__label" for="ch-country">Country / Region*</label>
+									<input required autocomplete="on" id="ch-country" name="ch-country" placeholder="Country / Region" type="text">
+								</div>
+								<div class="top__item">
+									<label class="top__label" for="ch-company">Company Name</label>
+									<input required autocomplete="on" id="ch-company" name="ch-company" placeholder="Company (optional)" type="text">
+								</div>
+								<div class="top__item">
+									<label class="top__label" for="ch-address-1">Street Address*</label>
+									<input required autocomplete="on" id="ch-address-1" name="ch-address-1" placeholder="House number and street name" type="text">
+								</div>
+								<div class="top__item">
+									<label class="top__label" for="ch-address-2">Apt, suite, unit</label>
+									<input required autocomplete="on" id="ch-address-2" name="ch-address-2" placeholder="apartment, suite, unit, etc. (optional)" type="text">
+								</div>
+							</div>
+
+							<div class="form-checkout__middle middle">
+								<div class="middle__item">
+									<label class="middle__label" for="ch-city">City*</label>
+									<input required autocomplete="on" id="ch-city" name="ch-city" placeholder="Town / City" type="text">
+								</div>
+
+
+								<div class="middle__item">
+									<label class="middle__label" for="state">State*</label>
+									<select required class="form-checkout__state" name="state" placeholder="State" id="state">
+										<option value="" hidden selected>State</option>
+										<option value="California">California</option>
+										<option value="Florida">Florida</option>
+										<option value="Kansas">Kansas</option>
+										<option value="Minnesota">Minnesota</option>
+										<option value="Massachusetts">Massachusetts</option>
+										<option value="New Hampshire">New Hampshire</option>
+										<option value="New York">New York</option>
+										<option value="North Carolina">North Carolina</option>
+										<option value="South Dakota">South Dakota</option>
+										<option value="Tennessee">Tennessee</option>
+										<option value="Washington">Washington</option>
+										<option value="West Virginia">West Virginia</option>
+										<option value="Wyoming">Wyoming</option>
+									</select>
+								</div>
+
+
+								<div class="middle__item">
+									<label class="middle__label" for="ch-zip">Postal Code*</label>
+									<input required autocomplete="on" id="ch-zip" name="ch-zip" placeholder="Postal Code" type="text">
+								</div>
+							</div>
+
+							<div class="form-checkout__bottom bottom">
+								<div class="bottom__item">
+									<label class="bottom__label" for="ch-phone">First Name*</label>
+									<input required autocomplete="on" id="ch-phone" name="ch-phone" placeholder="Phone" type="text">
+								</div>
+							</div>
+						</div>
+
+						<button class="form-checkout__submit form-checkout__submit--margin" type="submit">Continue to delivery</button>
+
+						<div class="form-checkout__all-checkbox">
+							<div class="form-checkout__save form-checkout__save--margin">
+								<input id="save" class="form-checkout__checkbox" autocomplete="off" type="checkbox" name="save">
+								<label class="form-checkout__label-check" for="save"><span>Set as default billing address</span></label>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<!-- =============== Shipping =============== -->
+
+			<form class="pay" id="pay" method="GET" action="#">
+				<div class="shipping">
+					<h2>Shipping Address</h2>
+					<p>Select the address that matches your card or payment method.</p>
+					<div class="shipping__border-table shipping__border-table--margin">
+						<div class="shipping__table shipping__table--margin">
+							<div class="shipping__address">
+								<input id="billing-addr" class="shipping__billing-address" type="radio" name="address" value="billing">
+								<label class="shipping__label-billing" for="billing-addr"><span>Same as Billing address</span></label>
+							</div>
+							<div class="shipping__address">
+								<input id="different-addr" class="shipping__billing-address" type="radio" name="address" value="different">
+								<label class="shipping__label-billing" for="different-addr"><span>Use a different shipping address</span></label>
+							</div>
+						</div>
+					</div>
+
+					<h2>Shipping Method</h2>
+					<div class="shipping__border-table shipping__border-table--margin">
+						<div class="shipping__table shipping__table--margin">
+							<div class="shipping__cost">
+								<div class="shipping__info">
+									<div class="shipping__arrives">Arrives by Monday, June 7</div>
+									<div class="shipping__delivery">
+										<div class="shipping__charges">Delivery Charges</div>
+										<div class="shipping__price">$5.00</div>
+									</div>
+								</div>
+								<div class="shipping__additional">Additional fess may apply</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- =============== Payment =============== -->
+
+					<div class="shipping__pay shipping__pay--margin">
+						<h2>Payment Method</h2>
+						<p>All transactions are secure and encrypted.</p>
+						<div class="shipping__border-table shipping__border-table--margin">
+							<div class="shipping__table shipping__table--margin">
+								<div class="shipping__payment payment">
+									<div class="payment__method">
+										<div class="payment__card">
+											<div class="payment__all-card">
+												<input id="card" class="payment__credit-card" type="radio" name="payment" value="card">
+												<label class="payment__label-card" for="card"><span>Credit Card</span></label>
+												<p>We accept all major credit cards.</p>
+											</div>
+											<div class="payment__icon-card">
+												<img src="img/g-pay.svg" alt="gpay">
+												<img src="img/visa.svg" alt="visa">
+												<img src="img/paypal.svg" alt="paypal">
+												<img src="img//paypass.svg" alt="paypass">
+											</div>
+											<div class="payment__ident-card">
+												<div class="payment__number-card">
+													<input required autocomplete="on" id="number" name="number" placeholder="Card number" maxlength="16" type="text">
+												</div>
+												<div class="payment__number-card">
+													<input required autocomplete="on" id="name" name="name" placeholder="Name of card" type="text">
+												</div>
+												<div class="payment__number-card">
+													<input required autocomplete="on" id="date" name="date" placeholder="Expiration date (MM/YY)" type="text">
+												</div>
+												<div class="payment__number-card">
+													<input required autocomplete="on" id="security" name="security" placeholder="Security Code" maxlength="3" type="password">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="payment__method">
+										<div class="payment__cash">
+											<input id="cash" class="payment__credit-card" type="radio" name="payment" value="cash">
+											<label class="payment__label-card" for="cash"><span>Cash on delivery</span></label>
+											<p>Pay with cash upon delivery.</p>
+										</div>
+									</div>
+									<div class="payment__method">
+										<div class="payment__paypal">
+											<input id="paypal" class="payment__credit-card" type="radio" name="payment" value="paypal">
+											<label class="payment__label-card" for="paypal"><span>Paypal</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="shipping__paynow" type="submit">Pay Now</button>
+				</div>
+
+
+
+
+
+			</form>
+
+		</main>
+		<footer>Живи! А працюй у вільний час!!!</footer>
+	</div>
+
+</body>
+
+</html>
