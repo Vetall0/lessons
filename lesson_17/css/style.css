@@ -1,0 +1,519 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+	position: relative;
+	/* margin: 0 auto; */
+}
+header,
+footer {
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	color: rgb(235, 0, 71);
+	background: linear-gradient(3deg, rgba(255,204,0,1) 0%, rgba(0,102,204,1) 100%);
+	border: 3px solid green;
+}
+
+/* ============== Popular ============== */
+
+.popular {
+	width: 100%;
+	background-color: #FEFAF4;
+	padding-bottom: 144px;
+}
+
+.ours-popular {
+	max-width: 1630px;
+	/* width: 100%; */
+	margin: 0 auto;
+	font-family: "Inter", sans-serif;
+	padding: 0 15px;
+}
+
+.content-block {
+	padding: 0 200px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.content-block h2 {
+	color: #000;
+	font-family: "DM Serif Text", serif;
+	font-size: 58px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 125px 0 27px 0;
+}
+
+.content-block h3 {
+	color: #606060;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.8; /* 36px */
+	margin-bottom: 60px;
+}
+
+.popular__item {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -21px;
+}
+
+.flower {
+	max-width: 171px;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 469px;
+}
+
+.item__image {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 357 / 240;
+	object-fit: cover;
+	transition: all 0.3s;
+}
+
+.item__link-img {
+	overflow: hidden;
+}
+
+.item__column {
+	flex: 1 0 33.333%;
+	padding: 0 21px;
+}
+
+.item__container {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+}
+
+.item__container h4 {
+	color: #000;
+	font-family: "DM Serif Text", serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.2; /* 120% */
+}
+
+.item__container p {
+	color: #000;
+	line-height: 1.6; /* 25.6px */
+}
+
+.item__container--margin > p:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.item__container--margin h4 {
+	margin-bottom: 16px;
+}
+
+.item__link {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 4px;
+	align-items: flex-start;
+	transition: all 0.3s;
+}
+
+.item__link p {
+	color: #F55529;
+	font-weight: 800;
+	line-height: 1.5; /* 150% */
+}
+
+.item__link img {
+	transition: all 0.3s;
+}
+
+/* ================ Popular (Адаптив) ================ */
+
+@media (any-hover :hover) {
+	.item__image:hover {
+		transform: scale(1.1);
+	}
+	.item__link img:hover {
+		transform: scale(1.1);
+	}
+	.item__link p:hover {
+		text-decoration: underline;
+		color: #F55529;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.ours-popular {
+		max-width: 970px;
+	}
+	.content-block {
+		padding: 0 100px;
+	}
+}
+
+@media (max-width: 990.98px) {
+	.ours-popular {
+		max-width: 750px;
+	}
+	.flower {
+		display: none;
+	}
+	.content-block h2 {
+		margin: 50px 0 20px 0;
+	}
+	.content-block h3 {
+		margin-bottom: 40px;
+	}
+	.content-block {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.ours-popular {
+		max-width: 450px;
+	}
+	.popular__item {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	.item__link p {
+		font-size: 20px;
+	}
+	.content-block h2 {
+		font-size: 36px;
+		margin: 50px 0 15px 0;
+	}
+	.content-block h3 {
+		margin-bottom: 15px;
+	}
+}
+
+
+/* ============== Most Popular ============== */
+
+
+.most-popular {
+	margin-top: 152px;
+	margin-bottom: 100px;
+	width: 100%;
+}
+
+.most-popular-product {
+	max-width: 1630px;
+	margin: 0 auto;
+	font-family: "Cormorant Infant", serif;
+	font-weight: 700;
+	padding: 0 15px;
+}
+
+.popular-product {
+	padding: 0 210px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.popular-product h2 {
+	color: #291403;
+	font-family: "DM Serif Text", serif;
+	font-size: 58px;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 100%; /* 58px */
+	margin-bottom: 27px;
+}
+
+.popular-product h3 {
+	color: #818181;
+	font-size: 30px;
+	text-transform: capitalize;
+	line-height: 1.4; /* 42px */
+	margin-bottom: 62px;
+}
+
+.most-popular__most {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 76px;
+	margin: 0 -15px;
+	flex-wrap: wrap;
+}
+
+.most__column {
+	padding: 0 15px;
+	flex: 0 0 25%;
+}
+
+.most__image-lnk {
+	overflow: hidden;
+}
+
+.most__image {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 270 / 270;
+	object-fit: cover;
+	transition: all 0.3s;
+}
+
+.most__link-text p:not(:last-child){
+	padding-bottom: 4px;
+}
+
+.most__link-text p {
+	color: #000;
+	font-size: 24px;
+	line-height: 1.4; /* 33.6px */
+}
+
+.link-more {
+	color: #FFF;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	line-height: 30px; /* 187.5% */
+	width: 165px;
+	height: 54px;
+	background-color: #FF7A49;
+	padding: 12px 42.5px;
+	transition: all 0.3s;
+}
+
+
+/* ============== Most Popular (Адаптив) ============== */
+
+
+@media (any-hover :hover) {
+	.most__link-img:hover .most__image {
+		transform: scale(1.1);
+	}
+	.most__link-img:hover .most__link-text {
+		text-decoration: underline;
+	}
+	.link-more:hover {
+		background-color: #ff9771;
+	}
+	.link-more:active {
+		background-color: #e23c00;
+	}
+}
+
+
+@media (max-width: 1199.98px) {
+	.most-popular-product {
+		max-width: 970px;
+	}
+	.popular-product h2 {
+		font-size: 48px;
+	}
+	.popular-product h3{
+		margin-bottom: 30px;
+	}
+	.most__column {
+		padding: 0 15px;
+		flex: 0 0 50%;
+	}
+}
+
+@media (max-width: 990.98px) {
+	.most-popular-product {
+		max-width: 750px;
+		}
+	.popular-product h2 {
+		font-size: 32px;
+		}
+	.popular-product h3{
+		font-size: 24px;
+		margin-bottom: 30px;
+		}
+	.popular-product {
+		padding: 0 50px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.most-popular-product {
+		max-width: 450px;
+	}
+	.most-popular__most {
+		flex-direction: column;
+	}
+}
+
+/* ============== Popular Product ============== */
+
+.produkt {
+	width: 100%;
+	padding-bottom: 100px;
+	background-color: #0E333D;
+}
+
+.super-produkt {
+	max-width: 1630px;
+	padding: 0 15px;
+	font-family: "Raleway", sans-serif;
+	color: #FFF;
+	margin: 0 auto;
+}
+
+.super-popular {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.super-popular h2 {
+	font-family: "DM Serif Text", serif;
+	font-size: 48px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.27; /* 60.96px */
+	margin: 94px 0 23px 0;
+}
+
+.super-popular h3 {
+	color: #EBEBEB;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.27; /* 25.4px */
+	margin-bottom: 34px;
+}
+
+.produkt__super {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.super__item-material--margin {
+	margin-bottom: 77px;
+}
+
+.super__material {
+	display: flex;
+	justify-content: center;
+	gap: 41px;
+}
+
+.super__list-link {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.27; /* 22.86px */
+}
+
+.super__link-main {
+	display: flex;
+	margin: 0 -15px;
+	flex-wrap: wrap;
+	row-gap: 50px;
+	
+}
+
+.super__link {
+	flex: 1 0 25%;
+	padding: 0 15px;
+}
+
+.super__link-item {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.super__link-img {
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.super__link-img--margin {
+	margin-bottom: 17px;
+}
+
+.super__image {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 270 / 270;
+	object-fit: cover;
+	transition: all 0.3s;
+}
+
+.super__link-text p {
+	font-family: "Cormorant Infant", serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4; /* 33.6px */
+}
+
+.super__link-text p:not(:last-child) {
+	padding-bottom: 4px;
+}
+
+/* ============== Popular Product (Адаптив) ============== */
+
+@media (any-hover :hover) {
+	.super__list-link:hover {
+		text-decoration: underline;
+	}
+	.super__link-item:hover .super__image {
+		transform: scale(1.1);
+	}
+	.super__link-item:hover .super__link-text {
+		text-decoration: underline;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.super-produkt {
+		max-width: 970px;
+	}
+	.super__link {
+		flex: 1 0 50%;
+	}
+}
+
+@media (max-width: 990.98px) {
+	.super-produkt {
+		max-width: 750px;
+		}
+	.super-popular h2 {
+		font-size: 36px;
+		margin: 40px 0 15px 0;
+		}
+	.super-popular h3{
+		font-size: 16px;
+		margin-bottom: 20px;
+		}
+}
+
+@media (max-width: 767.98px) {
+	.super-produkt {
+		max-width: 450px;
+	}
+	.super__link {
+		flex: 1 0 100%;
+	}
+	.super__material {
+		flex-wrap: wrap;
+	}
+}
+
