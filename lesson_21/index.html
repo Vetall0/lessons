@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="/img/icon/favicon.ico" type="image/x-icon">
+	<title>Урок №21 (Суперсили SASS/SCSS, Семантика та доступність)</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__main-menu main-menu">
+				<div class="main-menu__all">
+					<div class="main-menu__logo">
+						<img src="img/logo/logo.svg" alt="site logo">
+					</div>
+					<nav class="main-menu__menu-site">
+						<ul class="main-menu__list">
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Shop</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Men</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Women</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Combos</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Joggers</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="main-menu__search-adaptive"></div>
+					<form action="" class="main-menu__search" method="post">
+						<input name="search" autocomplete="off" placeholder="Search" type="search" class="main-menu__form-search">
+						</input>
+						<button class="main-menu__button" type="submit"></button>
+					</form>
+					<div class="main-menu__activity">
+						<a href="#" class="main-menu__wish">
+							<img src="img/icon/heart.svg" alt="wish-list">
+						</a>
+						<a href="#" class="main-menu__wish">
+							<img src="img/icon/user.svg" alt="you account">
+						</a>
+						<a href="#" class="main-menu__wish">
+							<img src="img/icon/bag.svg" alt="shopping bag">
+						</a>
+					</div>
+					<div class="main-menu__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<script src="js/script.js"></script>
+		</header>
+
+		<main>
+
+			<div class="head">
+				<div class="head__content">
+					<div class="head__content-main">
+						<img src="img/photo/main-photo.jpg" alt="main image" class="head__image">
+						<div class="head__text-box">
+							<div class="head__info">
+								<div class="head__info-block">
+									<p>T-Shirt / Tops</p>
+									<h1>Summer Value Pack</h1>
+									<p>cool / colorful / comfy</p>
+									<button type="button" class="head__button">Shop Now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="head__arrow">
+						<a href="#" class="head__arrow-left">
+							<img src="img/icon/main-left.svg" alt="left">
+						</a>
+						<a href="#" class="head__arrow-right">
+							<img src="img/icon/main-right.svg" alt="left">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<article class="site">
+				<section class="top">
+					<div class="top__images">
+						<div class="top-image">
+							<div class="top__description description">
+								<img class="description__img" src="img/photo/top-1.jpg" alt="top">
+								<div class="description__feature">
+									<div class="description__kharacter description__kharacter--margin">Low Price</div>
+									<div class="description__name description__name--margin">High Coziness</div>
+									<div class="description__sale description__sale--margin">UPTO 50% OFF</div>
+									<a href="#" class="description__explore">Explore Items</a>
+								</div>
+							</div>
+						</div>
+						<div class="top-image">
+							<div class="top__description description">
+								<img class="description__img" src="img/photo/top-2.jpg" alt="top">
+								<div class="description__feature">
+									<div class="description__kharacter description__kharacter--margin">Beyoung Presents</div>
+									<div class="description__name description__name--margin">Breezy Summer Style</div>
+									<div class="description__sale description__sale--margin">UPTO 50% OFF</div>
+									<a href="#" class="description__explore">Explore Items</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="middle">
+					<div class="middle__images">
+						<h2 class="tittle">New Arrival</h2>
+						<div class="middle__content">
+							<div class="middle__arrow">
+								<a href="#" class="middle__arrow-left">
+									<img src="img/icon/arrow-left.svg" alt="arrow-left">
+								</a>
+							</div>
+							<div class="middle__image-all">
+								<div class="middle__image">
+									<div class="middle__img">
+										<a href="#" class="middle__item middle__item--margin">
+											<img src="img/photo/new-1.jpg" alt="new">
+											<h3>Knitted Joggers</h3>
+										</a>
+									</div>
+									<div class="middle__img">
+										<a href="#" class="middle__item middle__item--margin">
+											<img src="img/photo/new-2.jpg" alt="new">
+											<h3>Full Sleeve</h3>
+										</a>
+									</div>
+									<div class="middle__img">
+										<a href="#" class="middle__item middle__item--margin">
+											<img src="img/photo/new-3.jpg" alt="new">
+											<h3>Active T-Shirts</h3>
+										</a>
+									</div>
+									<div class="middle__img">
+										<a href="#" class="middle__item middle__item--margin">
+											<img src="img/photo/new-4.jpg" alt="new">
+											<h3>Urban Shirts</h3>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="middle__arrow">
+								<a href="#" class="middle__arrow-right">
+									<img src="img/icon/arrow-right.svg" alt="arrow-right">
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="bottom">
+					<div class="bottom__images">
+						<h2 class="tittle">Big Saving Zone</h2>
+						<div class="bottom__content">
+							<div class="bottom__image">
+								<img class="bottom__main-img" src="img/photo/big-1.jpg" alt="img">
+								<div class="bottom__img">
+									<div class="bottom__img-1">
+										<h3 class="bottom__tittle-img">Hawaiian Shirts</h3>
+										<h4 class="bottom__discriptoin">Dress up in summer vibe</h4>
+										<p>UPTO 50% OFF</p>
+										<img class="bottom__arrow bottom__arrow--margin" src="img/icon/arrow-down-white.svg" alt="arrow">
+										<a class="bottom__action" href="#">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+							<div class="bottom__image">
+								<img class="bottom__main-img" src="img/photo/big-2.jpg" alt="img">
+								<div class="bottom__img">
+									<div class="bottom__img-2">
+										<div class="bottom__stock bottom__stock--margin">
+											<a href="#" class="bottom__limited">Limited Stock</a>
+										</div>
+										<h3 class="bottom__tittle-img">Printed <br> T-Shirt</h3>
+										<h4 class="bottom__discriptoin">New Designs Every Week</h4>
+										<p>UPTO 40% OFF</p>
+										<img class="bottom__arrow bottom__arrow--margin" src="img/icon/arrow-down-white.svg" alt="arrow">
+										<a class="bottom__action" href="#">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+							<div class="bottom__image">
+								<img class="bottom__main-img" src="img/photo/big-3.jpg" alt="img">
+								<div class="bottom__img">
+									<div class="bottom__img-3">
+										<h3 class="bottom__tittle-img">Cargo Joggers</h3>
+										<h4 class="bottom__discriptoin">Move with style & comfort</h4>
+										<p>UPTO 50% OFF</p>
+										<img class="bottom__arrow bottom__arrow--margin" src="img/icon/arrow-down-black.svg" alt="arrow">
+										<a class="bottom__action" href="#">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+							<div class="bottom__image">
+								<img class="bottom__main-img" src="img/photo/bottom-1.jpg" alt="img">
+								<div class="bottom__img">
+									<div class="bottom__img-4">
+										<h3 class="bottom__tittle-img">Urban Shirts</h3>
+										<h4 class="bottom__discriptoin">Live In Confort</h4>
+										<p>FLAT 60% OFF</p>
+										<img class="bottom__arrow bottom__arrow--margin" src="img/icon/arrow-down-black.svg" alt="arrow">
+										<a class="bottom__action" href="#">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+							<div class="bottom__image">
+								<img class="bottom__main-img" src="img/photo/bottom-2.jpg" alt="img">
+								<div class="bottom__img">
+									<div class="bottom__img-5">
+										<h3 class="bottom__tittle-img">Oversized T-Shirts</h3>
+										<h4 class="bottom__discriptoin">Street Style Icon</h4>
+										<p>FLAT 60% OFF</p>
+										<img class="bottom__arrow bottom__arrow--margin" src="img/icon/arrow-down-black.svg" alt="arrow">
+										<a class="bottom__action" href="#">SHOP NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="better">
+					<div class="better__images">
+						<div class="better__content">
+							<div class="better__image">
+								<div class="better__text">
+									<div class="better__all-text">
+										<h3>WE MADE YOUR EVERYDAY FASHION BETTER!</h3>
+										<p>In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+										<button type="button">Shop Now</button>
+									</div>
+								</div>
+							</div>
+							<div class="better__image">
+								<img class="better__img" src="img/photo/fashion.jpg" alt="fashion">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="categories">
+					<div class="categories__images">
+						<h2 class="tittle">Categories For Men</h2>
+						<div class="categories__items">
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/man-1.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Shirts</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/man-2.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Printed T-Shirts</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/man-3.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Plain T-Shirt</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/man-4.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Polo T-Shirt</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/man-5.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Hoodies & Sweetshirt</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/man-6.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Jeans</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/man-7.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Activewear</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/man-8.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Boxers</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- ================================================================== -->
+
+				<section class="categories">
+					<div class="categories__images">
+						<h2 class="tittle">Categories For Women</h2>
+						<div class="categories__items">
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/woman-1.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Hoodies & Sweetshirt</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/woman-2.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Coats & Parkas</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/woman-3.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Tees & T-Shirt</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img">
+										<img src="img/photo/woman-4.jpg" alt="men">
+									</div>
+									<div class="categories__description">
+										<div class="categories__text">
+											<h4>Boxers</h4>
+											<p>Explore Now!</p>
+										</div>
+										<span></span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- ================================================================== -->
+
+				<section class="brands">
+					<div class="brands__deal">
+						<h3>Top Brands Deal</h3>
+						<p>Up To <span>60%</span> off on brands</p>
+						<div class="brands__links">
+							<ul class="brands__list">
+								<li class="brands__item">
+									<a target="_blank" href="#" class="brands__link">
+										<img src="img/logo/nike.png" alt="nike">
+									</a>
+								</li>
+								<li class="brands__item">
+									<a target="_blank" href="#" class="brands__link">
+										<img src="img/logo/hm.png" alt="nike">
+									</a>
+								</li>
+								<li class="brands__item">
+									<a target="_blank" href="#" class="brands__link">
+										<img src="img/logo/levis.png" alt="nike">
+									</a>
+								</li>
+								<li class="brands__item">
+									<a target="_blank" href="#" class="brands__link">
+										<img src="img/logo/polo.png" alt="nike">
+									</a>
+								</li>
+								<li class="brands__item">
+									<a target="_blank" href="#" class="brands__link">
+										<img src="img/logo/puma.png" alt="nike">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- ===================================================== -->
+
+				<section class="categories">
+					<div class="categories__images">
+						<h2 class="tittle">In The Limelight</h2>
+						<div class="categories__items categories__items--gap">
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img-lime">
+										<img src="img/photo/limelight-1.jpg" alt="Limelight">
+									</div>
+									<div class="categories__description-lime">
+										<div class="categories__text-lime">
+											<h4>Black Sweatshirt with ....</h4>
+											<p>Jhanvi’s Brand</p>
+										</div>
+										<div class="categories__price">
+											<p>$123.00</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img-lime">
+										<img src="img/photo/limelight-2.jpg" alt="Limelight">
+									</div>
+									<div class="categories__description-lime">
+										<div class="categories__text-lime">
+											<h4>line Pattern Black H...</h4>
+											<p>AS’s Brand</p>
+										</div>
+										<div class="categories__price">
+											<p>$37.00</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img-lime">
+										<img src="img/photo/limelight-3.jpg" alt="Limelight">
+									</div>
+									<div class="categories__description-lime">
+										<div class="categories__text-lime">
+											<h4>Black Shorts</h4>
+											<p>MM’s Brand</p>
+										</div>
+										<div class="categories__price">
+											<p>$37.00</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories__cell">
+								<div class="categories__item">
+									<div class="categories__img-lime">
+										<img src="img/photo/limelight-4.jpg" alt="Limelight">
+									</div>
+									<div class="categories__description-lime">
+										<div class="categories__text-lime">
+											<h4>Levender Hoodie with ....</h4>
+											<p>Nike’s Brand</p>
+										</div>
+										<div class="categories__price">
+											<p>$119.00</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- ===================================================== -->
+
+				<section class="categories">
+					<div class="categories__images">
+						<h2 class="tittle">Feedback</h2>
+						<div class="categories__items-back">
+							<div class="categories__cell-back">
+								<div class="categories__item-back">
+									<div class="categories__img-back">
+										<img src="img/photo/small-pic-1.jpg" alt="Feedback">
+										<ul class="categories__stars">
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-half.svg" alt="star"></li>
+											<li><img src="img/icon/star-outline.svg" alt="star"></li>
+										</ul>
+									</div>
+									<h5 class="categories__name">Floyd Miles</h5>
+									<div class="categories__description-back">
+										<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>
+											Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+									</div>
+								</div>
+							</div>
+							<div class="categories__cell-back">
+								<div class="categories__item-back">
+									<div class="categories__img-back">
+										<img src="img/photo/small-pic-2.jpg" alt="Feedback">
+										<ul class="categories__stars">
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-outline.svg" alt="star"></li>
+										</ul>
+									</div>
+									<h5 class="categories__name">Ronald Richards</h5>
+									<div class="categories__description-back">
+										<p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+									</div>
+								</div>
+							</div>
+							<div class="categories__cell-back">
+								<div class="categories__item-back">
+									<div class="categories__img-back">
+										<img src="img/photo/small-pic-3.jpg" alt="Feedback">
+										<ul class="categories__stars">
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-full.svg" alt="star"></li>
+											<li><img src="img/icon/star-half.svg" alt="star"></li>
+											<li><img src="img/icon/star-outline.svg" alt="star"></li>
+										</ul>
+									</div>
+									<h5 class="categories__name">Savannah Nguyen</h5>
+									<div class="categories__description-back">
+										<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>
+											Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ===================================================== -->
+
+			</article>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__content content">
+				<div class="content__menu-footer menu-footer">
+					<div class="menu-footer__information">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">Need Help</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Contact Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Track Order</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Returns & Refunds</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">FAQ's</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Career</a>
+							</li>
+						</ul>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">Company</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">About Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">euphoria Blog</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">euphoriastan</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Collaboration</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Media</a>
+							</li>
+						</ul>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">More Info</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Term and Conditions</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Privacy Policy</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Shipping Policy</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Sitemap</a>
+							</li>
+						</ul>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">Location</li>
+							<li class="menu-footer__item">
+								<a href="mailto:support@euphoria.in" class="menu-footer__link">support@euphoria.in</a>
+							</li>
+							<li class="menu-footer__item">
+								<div class="menu-footer__address">Eklingpura Chouraha, Ahmedabad Main Road</div>
+							</li>
+							<li class="menu-footer__item">
+								<div class="menu-footer__address">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</div>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-footer__middle menu-footer__middle--margin">
+						<div class="menu-footer__offside">
+							<div class="menu-footer__social">
+								<a target="_blank" href="#" class="menu-footer__link-social">
+									<img src="img/icon/fb.svg" alt="facebook">
+								</a>
+								<a target="_blank" href="#" class="menu-footer__link-social">
+									<img src="img/icon/insta.svg" alt="instagramm">
+								</a>
+								<a target="_blank" href="#" class="menu-footer__link-social">
+									<img src="img/icon/tweet.svg" alt="tweetter">
+								</a>
+								<a target="_blank" href="#" class="menu-footer__link-social">
+									<img src="img/icon/in.svg" alt="likedin">
+								</a>
+							</div>
+							<div class="menu-footer__app">
+								<f5 class="menu-footer__download-gallery">Download The App </f5>
+								<div class="menu-footer__gallery">
+									<a target="_blank" href="#" class="menu-footer__gallery-link">
+										<img src="img/icon/gp.svg" alt="google play">
+									</a>
+									<a target="_blank" href="#" class="menu-footer__gallery-link">
+										<img src="img/icon/app-store.svg" alt="apple store">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="menu-footer__popular">
+						<h5>Popular Categories</h5>
+						<img src="img/icon/arrow-footer.svg" alt="arrow">
+					</a>
+					<div class="menu-footer__copiright">
+						<p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
