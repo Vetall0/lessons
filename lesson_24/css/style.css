@@ -1,0 +1,89 @@
+@import "fonts.css";
+@import "reset.css";
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  background: url("..//img/pattern.jpg") fixed;
+}
+
+.wrapper .main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.header,
+.footer {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: yellow;
+  padding: 1.25rem 0;
+  background: linear-gradient(45deg, #dfe327 0%, rgb(72, 72, 241) 50%, #00d4ff 100%);
+}
+
+.header {
+  margin-bottom: 3.125rem;
+}
+
+.main {
+  max-width: 75rem;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+}
+
+.fieldset {
+  border: 3px solid #383838;
+  border-radius: 0.625rem;
+  padding: 0.9375rem;
+}
+.fieldset:not(:last-child) {
+  margin-bottom: 3.125rem;
+}
+.fieldset legend {
+  margin-left: 3.125rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.fieldset legend + p {
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.9375rem;
+  font-style: oblique;
+  color: #5e5e5e;
+}
+.fieldset legend ~ p {
+  margin-bottom: 0.625rem;
+}
+.fieldset legend ~ p span {
+  padding-left: 3.125rem;
+}
+
+.footer {
+  margin-top: 3.125rem;
+}
+
+.link {
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: blue;
+  border-radius: 0.75rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.9375rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.link:hover {
+  background-color: #000083;
+}
