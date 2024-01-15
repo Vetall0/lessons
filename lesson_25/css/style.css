@@ -1,0 +1,40 @@
+@import "fonts.css";
+@import "reset.css";
+body {
+  font-size: 1.125rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  padding: 3.125rem;
+  background: url("..//img/pattern.jpg") fixed repeat;
+}
+
+.page {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button {
+  width: 12.5rem;
+  height: 4.375rem;
+  background-color: blue;
+  color: yellow;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  margin: 3.125rem 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: #0101c5;
+  }
+}
+
+.text p:not(:last-child) {
+  padding-bottom: 0.9375rem;
+}
